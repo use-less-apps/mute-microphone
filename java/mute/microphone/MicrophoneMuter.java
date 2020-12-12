@@ -61,13 +61,6 @@ public class MicrophoneMuter extends Service {
 		);
 	}
 
-	android.graphics.Bitmap asBitmap(int drawableID) {
-		return android.graphics.BitmapFactory.decodeResource(
-						getApplicationContext().getResources(),
-						drawableID
-		);
-	}
-
 	private void createNotificationChannel() {
 			boolean hasNotificationChannelClass = android.os.Build.VERSION.SDK_INT >= 26;
 			if (!hasNotificationChannelClass) {
